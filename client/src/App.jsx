@@ -9,7 +9,9 @@ function App() {
   const fetchMessage = async () => {
     try {
       setLoading(true);
-      const response = await axios.get("http://localhost:5000/api/hello");
+      const response = await axios.get(
+        "http://simple-mern-1.onrender.com/api/hello"
+      );
       setMessage(response.data.message);
     } catch (error) {
       console.error("Error fetching message:", error);
