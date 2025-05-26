@@ -10,7 +10,7 @@ function App() {
     try {
       setLoading(true);
       const response = await axios.get(
-        "http://simple-mern-1.onrender.com/api/hello"
+        "https://0c158465-e26b-47e2-bc42-dbf4a30fc632-00-31878mpkzmzx9.worf.replit.dev/api/hello"
       );
       setMessage(response.data.message);
     } catch (error) {
